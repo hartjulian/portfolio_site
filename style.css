@@ -18,12 +18,14 @@ nav {
     display: inline-flex;
     flex-direction: row;
     background-color: grey;
-    width: 100%;
+    width: 80%;
+    border-radius: 1rem;
     justify-content: center;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;   
 }
 
@@ -32,9 +34,67 @@ nav li {
     font-size: 2rem;
 }
 
+nav li:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
 nav a {
     display: block;
     color: whitesmoke;
     text-decoration: none;
 }
 
+.section {
+    width: 80%;
+    background-color: grey;
+    margin: 1.5rem auto;
+    border-radius: 1rem ;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+.content-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#skills .image-container {
+    height: 6rem;
+    padding: 1.5rem;
+}
+
+.image-container img {
+    height: 100%;
+}
+
+#skills img:hover {
+    transform: scale(1.2);
+}
+
+#projects img {
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+
+#contact .image-container {
+    height: 2rem;
+    padding: 1.5rem;
+}
+
+#contact img:hover {
+    transform: scale(1.2);
+}

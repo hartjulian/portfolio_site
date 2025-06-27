@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <!-- Header section with name and nav links -->
-         <h1>Julian Hart</h1>
+        <h1>Julian Hart</h1>
     </header>
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>            
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
         <!-- Main section with sub sections for About Me, Projects, Skills and Contact -->
-         <div id="about">
-            <h2>About Me</h2>
-         </div>
-         <div id="projects">
+        <div class="section" id="about">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="content-container">
+                <p>A developer with a passion for using technology to solve complex problems which provide real benefits.
+                Currently sharpening my technical skills to prepare for a return to a developer role, and I am excited and
+                motivated for the future. When I'm not learning new technical skills, I love running, and trying new and
+                unusual coffees or craft beers.</p>
+            </div>
+        </div>
+        <div class="section" id="skills">
+            <div class="heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="content-container">
+                <div class="image-container">
+                    <img src="./images/html5-original.svg" alt="HTML5">
+                </div>
+                <div class="image-container">
+                    <img src="./images/css3-original.svg" alt="CSS3">
+                </div>
+                <div class="image-container">
+                    <img src="./images/javascript-original.svg" alt="JavaScript">
+                </div>
+                <div class="image-container">
+                    <img src="./images/git-original.svg" alt="git">
+                </div>
+                <div class="image-container">
+                    <img src="./images/microsoftsqlserver-original.svg" alt="Microsoft SQL Server">
+                </div>                
+            </div>
+        </div>        
+        <div class="section" id="projects">
             <h2>Projects</h2>
-         </div>
-         <div id="skills">
-            <h2>Skills</h2>
-         </div>
-         <div id="contact">
+            <div class="content-container">
+                <img src="./images/under-construction.png" alt="Section under construction.  Check back soon">
+            </div>
+        </div>
+        <div class="section" id="contact">
             <h2>Contact</h2>
-         </div>
+            <div class="content-container">
+                <div class="image-container">
+                    <a href="https://linkedin.com/in/julianhart81" target="_blank">
+                    <img src="./images/LI-In-Bug.png" alt="LinkedIn logo">
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="https://github.com/hartjulian" target="_blank">
+                        <img src="./images/github-original.svg" alt="GitHub logo">
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="mailto:julian.w.hart@gmail.com" target="_blank">
+                        <img src="./images/Gmail_Icon.original.png" alt="Gmail logo">
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- Footer section if required.  Maybe copyright with name and year -->
     </footer>
 </body>
+
 </html>
