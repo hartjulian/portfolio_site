@@ -6,12 +6,27 @@ html {
     text-align: center;
 }
 
-header {
-    text-transform: uppercase;
+.header-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem auto 0;
+}
+
+.header-container .left-container {
+    width: 10%;
+}
+
+.header-container .right-container {
+    width: 10%;
+    align-content: center;
+    text-align: right;
 }
 
 header h1 {
+    text-transform: uppercase;
     font-size: 4rem;
+    width: 80%;
+    margin: 0;
 }
 
 nav {
@@ -21,6 +36,7 @@ nav {
     width: 80%;
     border-radius: 1rem;
     justify-content: center;
+    margin: 1.5rem auto 1.5rem;
 }
 
 nav ul {
@@ -34,7 +50,12 @@ nav li {
     font-size: 2rem;
 }
 
-nav li:hover {
+a {
+    text-decoration: none;
+    color: whitesmoke;    
+}
+
+a:hover {
     transform: scale(1.1);
     font-weight: bolder;
     text-decoration: underline;
@@ -42,38 +63,47 @@ nav li:hover {
 
 nav a {
     display: block;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.dropbtn {
-    font-size: 2rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    color: whitesmoke;
-    background-color: grey;
 }
 
 .dropdown-menu {
     display: none;
     position: relative;
+    margin-right: 1rem;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 2rem;
+    height: 0.25rem;
+    margin: 0.25rem 0;
+    background-color: whitesmoke;
 }
 
 .dropdown-content {
     display: none;
-    background-color: black;
+    flex-direction: column;
+    background-color: grey;
+    border-style: solid;
+    border-color: whitesmoke;
     font-size: 1.5rem;    
-    z-index: 1;
+    text-align: left;
     position: absolute;
-    width: 100%;
+    right: 1rem;
+    top: 6rem;
+    z-index: 1;
 }
 
-.show {display: block;}
+.dropdown-content a {
+    margin: 0.25rem;
+}
+
+.show {
+    display: inline-flex;
+}
 
 .section {
     width: 80%;
     background-color: grey;
-    margin: 1.5rem auto;
+    margin: 0 auto 1.5rem;
     border-radius: 1rem ;
 }
 
@@ -129,8 +159,8 @@ p {
         display: none;
     }
 
-    nav .dropdown-menu {
-        display:inline;
+    .dropdown-menu {
+        display:inline-block;
     }
 }
 
@@ -138,6 +168,24 @@ p {
     #skills .image-container {
     height: 4rem;
     padding: 1rem;
+}
+}
+
+@media only screen and (max-width: 540px) {
+.header-container .left-container {
+    width: 25%;
+}
+
+.header-container .right-container {
+    width: 25%;
+}
+
+header h1 {
+    width: 50%;
+}
+
+.dropdown-content {
+    top: 8rem;
 }
 }
 
@@ -151,4 +199,13 @@ p {
     height: 2rem;
     padding: 1rem;
 }
+
+.header-container .left-container {
+    width: 0%;
+}
+
+.header-container h1 {
+    width: 75%;
+}
+
 }
