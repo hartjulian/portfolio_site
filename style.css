@@ -42,7 +42,7 @@ nav {
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;   
+    list-style: none;
 }
 
 nav li {
@@ -52,7 +52,7 @@ nav li {
 
 a {
     text-decoration: none;
-    color: whitesmoke;    
+    color: whitesmoke;
 }
 
 a:hover {
@@ -71,7 +71,9 @@ nav a {
     margin-right: 0.5rem;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 2rem;
     height: 0.25rem;
     margin: 0.25rem 0;
@@ -84,7 +86,7 @@ nav a {
     background-color: grey;
     border-style: solid;
     border-color: whitesmoke;
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
     text-align: left;
     position: absolute;
     right: 1rem;
@@ -104,7 +106,7 @@ nav a {
     width: 80%;
     background-color: grey;
     margin: 0 auto 1.5rem;
-    border-radius: 1rem ;
+    border-radius: 1rem;
 }
 
 h2 {
@@ -166,57 +168,57 @@ p {
     }
 
     .dropdown-menu {
-        display:inline-block;
+        display: inline-block;
     }
 }
 
 @media only screen and (max-width:930px) {
     #skills .image-container {
-    height: 4rem;
-    padding: 1rem;
-}
+        height: 4rem;
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 540px) {
-.header-container .left-container {
-    width: 25%;
-}
+    .header-container .left-container {
+        width: 25%;
+    }
 
-.header-container .right-container {
-    width: 25%;
-}
+    .header-container .right-container {
+        width: 25%;
+    }
 
-header h1 {
-    width: 50%;
-}
+    header h1 {
+        width: 50%;
+    }
 
-.dropdown-content {
-    top: 8rem;
-}
+    .dropdown-content {
+        top: 8rem;
+    }
 }
 
 @media only screen and (max-width:400px) {
     #skills .image-container {
-    height: 3rem;
-    padding: 0.5rem;
+        height: 3rem;
+        padding: 0.5rem;
     }
 
     #contact .image-container {
-    height: 2rem;
-    padding: 1rem;
-}
+        height: 2rem;
+        padding: 1rem;
+    }
 
-.header-container .left-container {
-    width: 10%;
-}
+    .header-container .left-container {
+        width: 10%;
+    }
 
-.header-container h1 {
-    text-align: left;
-    width: 80%;
-}
+    .header-container h1 {
+        text-align: left;
+        width: 80%;
+    }
 
-.header-container .right-container {
-    width: 10%;
-}
+    .header-container .right-container {
+        width: 10%;
+    }
 
 }
