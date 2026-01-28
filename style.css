@@ -172,9 +172,9 @@ h3 {
 
 .project-container {
     display: inline-block;
-    width: 20%;
+    width: 40%;
     text-align: left;
-    padding: 1.5rem 3rem;
+    margin: 1rem;
 }
 
 #contact .image-container {
@@ -200,12 +200,25 @@ h3 {
     .dropdown-menu {
         display: inline-block;
     }
+
+    .section {
+        width: unset;
+    }    
 }
 
 @media only screen and (max-width:930px) {
+
     #skills .image-container {
         height: 4rem;
         padding: 1rem;
+    }
+
+    .project-container {
+        width: unset;
+    }
+
+    #about p {
+        margin: 1rem;
     }
 }
 
