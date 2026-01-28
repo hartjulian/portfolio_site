@@ -6,4 +6,4 @@
 * Update projects
 * Learn more skills and update skills section
 * Make it responsive
-* Make it aesthetically pleasing
+* Make it more aesthetically pleasing

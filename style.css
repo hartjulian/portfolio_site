@@ -32,7 +32,7 @@ header h1 {
 nav {
     display: inline-flex;
     flex-direction: row;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
     width: 80%;
     border-radius: 1rem;
     justify-content: center;
@@ -83,7 +83,7 @@ nav a {
 .dropdown-content {
     display: none;
     flex-direction: column;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
     border-style: solid;
     border-color: whitesmoke;
     font-size: 1.5rem;
@@ -104,7 +104,7 @@ nav a {
 
 .section {
     width: 80%;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
     margin: 0 auto 1.5rem;
     border-radius: 1rem;
 }
