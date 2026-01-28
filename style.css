@@ -115,36 +115,66 @@ h2 {
     padding: 1rem;
 }
 
-p {
+h3 {
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about p {
     font-size: 1.5rem;
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+    width: 100%;
 }
 
 .content-container {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #skills .image-container {
     height: 6rem;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem 1.5rem 3rem; /* Manipulate the left/right padding to space appropriately depending on the number of icons displayed */
 }
 
 .image-container img {
     height: 100%;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden; /* Hidden by default */
+  width: 8rem;
+  background-color: black;
+  color: #ffffff;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1; /* Ensure tooltip is displayed above content */
+  margin-left: -4rem;
+  left: 50%;
+}
+
+.image-container:hover .tooltip-text {
+    visibility: visible;
+}
+
 #skills img:hover {
     transform: scale(1.2);
 }
 
-#projects img {
-    width: 50%;
-    margin: auto;
-    padding: 2rem;
+.project-container {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    padding: 1.5rem 3rem;
 }
 
 #contact .image-container {
