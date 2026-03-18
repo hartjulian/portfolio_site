@@ -36,6 +36,7 @@ nav {
     width: 80%;
     justify-content: center;
     margin: 1.5rem auto 1.5rem;
+    border-radius: 1rem;
 }
 
 nav ul {
@@ -106,6 +107,7 @@ nav a {
     width: 80%;
     background-color: rgba(128, 128, 128, 0.5);
     margin: 0 auto 1.5rem;
+    border-radius: 1rem;
 }
 
 h2 {
@@ -151,10 +153,10 @@ h3 {
 .tooltip-text {
   visibility: hidden; /* Hidden by default */
   width: 8rem;
-  background-color: black;
+  background-color: rgba(128, 128, 128, 1);
   color: #ffffff;
   padding: 5px 0;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   position: absolute;
   z-index: 1; /* Ensure tooltip is displayed above content */
   margin-left: -4rem;
@@ -175,7 +177,7 @@ h3 {
     text-align: left;
     margin: 1rem;
     background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     padding: 1rem;
 }
 
